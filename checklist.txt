@@ -1,0 +1,7 @@
+-   Styling de header
+-   Styling de footer
+-   Links para compartir info en header
+-   aria labels en todo el site
+-   Revisión responsive design y adecuar 
+-   favicon, title
+-   meta info 

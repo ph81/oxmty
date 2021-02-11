@@ -1,0 +1,70 @@
+
+.title {
+    height: 30vh;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.subtitle {
+    height: 20vh;
+    text-align: center;
+}
+.jumbotron {
+    background-image: url(../hero.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65vh;
+   }
+
+a {
+    color: darkgreen;
+    text-decoration: underline;
+}
+
+.social {
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+.social a {
+   margin-left:  10px;
+}
+
+.social-icon {
+    size: 7px;
+}
+
+.warning {
+    font-weight: bold;
+}
+
+
+.facebook:hover {
+    background: #3b5998 !important
+  }
+
+  .twitter:hover {
+    background: #00aced !important
+  }
+
+
+  @media only screen and (max-width: 360px) {
+    
+    .title {
+        height: 20vh;
+    }
+
+    .subtitle {
+        height: 20vh;
+    }
+    .social {
+      width: 120px;
+    }
+
+    .jumbotron {
+        height: 50vh;
+    }
+  }

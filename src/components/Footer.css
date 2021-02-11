@@ -1,0 +1,17 @@
+
+
+.credits {
+    margin-top: 40px;
+   
+    background-color: rgb(3, 87, 3);
+    color: white;
+}
+
+.credits a {
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-copyright {
+    margin-bottom: 40px;
+}
