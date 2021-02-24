@@ -9,7 +9,7 @@
 
 .credits a {
     color: white;
-    text-decoration: underline;
+    font-weight: bold;
 }
 
 .footer-copyright {

@@ -18,7 +18,7 @@ const Header = () => {
                             <a   href=""><FontAwesomeIcon icon={["fab", "twitter"]} /></a>
                         </p>
                         <p className="warning">
-                            <a href="https://www.forbes.com.mx/noticias-consejos-para-prevenir-fraudes-en-venta-o-renta-de-tanques-de-oxigeno/" target="_blank">
+                            <a href="https://www.forbes.com.mx/noticias-consejos-para-prevenir-fraudes-en-venta-o-renta-de-tanques-de-oxigeno/" target="_blank" rel="noreferrer">
                                 Consejos para prevenir fraudes en la venta y renta de oxígeno</a>
                         </p>
                       

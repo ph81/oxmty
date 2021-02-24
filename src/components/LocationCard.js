@@ -30,9 +30,9 @@ const LocationCard = ({empresa, tel, whatsapp, horario, dir, recarga, venta, ren
            
                 </p>
                 <p >
-                    <span>{whatsapp && <a href={whatsapp} alt="Whatsapp"><FontAwesomeIcon icon={['fab', 'whatsapp']} className="wa" /></a>}</span>
-                    <span>{dir && <a href={dir} alt="Dirección" target="_blank"><FontAwesomeIcon icon="map-marker-alt" className="map" /></a>}</span>
-                    <span>{web && <a href={web} alt="Web/Facebook" target="_blank">Web/Facebook</a>}</span>
+                    <span>{whatsapp && <a href={whatsapp} alt="Whatsapp" rel="noreferrer"><FontAwesomeIcon icon={['fab', 'whatsapp']} className="wa" /></a>}</span>
+                    <span>{dir && <a href={dir} alt="Dirección" target="_blank" rel="noreferrer"><FontAwesomeIcon icon="map-marker-alt" className="map" /></a>}</span>
+                    <span>{web && <a href={web} alt="Web/Facebook" target="_blank" rel="noreferrer">Web/Facebook</a>}</span>
                    
                     
                 </p>
