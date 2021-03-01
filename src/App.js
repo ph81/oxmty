@@ -48,7 +48,7 @@ class App extends Component {
               </div>
         
           </div>
-          <p className="text-center">Más información en <a href="">Oxígeno SPGG</a></p>
+          <p className="text-center">Más información en <a href="https://oxigeno.sanpedro.gob.mx/" target="_blank" rel="noreferrer">Oxígeno SPGG</a></p>
           
         
         </div>
