@@ -1,7 +1,7 @@
 import React from 'react';
 import './LocationCard.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
+
 
 const LocationCard = ({empresa, tel, whatsapp, horario, dir, recarga, venta, renta, web}) => {
     return (
