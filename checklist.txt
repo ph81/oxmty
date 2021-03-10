@@ -4,3 +4,4 @@
 x   Revisión responsive design y adecuar 
 x   favicon, title
 -   meta info 
+x   custom domain via netlify
