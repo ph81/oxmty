@@ -9,7 +9,7 @@ const LocationCard = ({empresa, tel, whatsapp, horario, dir, recarga, venta, ren
         
 
         <div className="col-sm-4">
-        <div className="card mt-1 mb-4">
+        <div className="card mt-1 mb-4 mx-auto">
        
             <div className="card-content">
             

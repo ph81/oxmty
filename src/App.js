@@ -10,8 +10,13 @@ import { faMapMarkerAlt, faPhone } from '@fortawesome/free-solid-svg-icons'
 library.add(fab, faMapMarkerAlt, faPhone)
 
 //airtable
+/*
 const apiKey = process.env.REACT_APP_API_KEY;
 const url = process.env.REACT_APP_API_URL;
+*/
+
+const apiKey='keyEKDet6ta3USuZe'
+const url='https://api.airtable.com/v0/appoWlSjRws1zu8pO/Locations?api_key='
 var base = url+apiKey;
 
 class App extends Component {
@@ -43,7 +48,7 @@ class App extends Component {
         <div className="container mt-5">
           <div className="row align-items-center">
           
-              <div className="card-deck">
+              <div className="card-deck mx-auto">
                 {this.state.locations.map(location => <LocationCard {...location.fields} /> )}
               </div>
         

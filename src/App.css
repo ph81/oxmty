@@ -2,4 +2,7 @@
   text-align: center;
 }
 
-
+a.hover {
+  color: darkgreen;
+  text-decoration: underline;
+}

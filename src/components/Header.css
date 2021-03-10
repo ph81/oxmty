@@ -52,6 +52,26 @@ a {
     background: #00aced !important
   }
 
+  
+  @media only screen and (max-width: 1024px) {
+
+
+    .title {
+        margin-top: 8px;
+    }
+    .subtitle {
+       
+        max-width: 80%;
+     
+    }
+    .jumbotron {
+        margin-top: 70px;
+        height: 50vh;
+        
+    }
+   }
+  
+
   @media only screen and (max-width: 760px) {
 
 
@@ -64,10 +84,34 @@ a {
     
    }
    .jumbotron {
-       margin-top: 50px;
-       height: 65vh;
+       margin-top: 70px;
+       height: 60vh;
        
    }
+  }
+
+  @media only screen and (min-width: 361px) and (max-width: 759px) {
+    
+
+    .title {
+        margin-top: 8px;
+        }
+    .display-4 {
+            font-size: 1.7rem;
+        }
+    .subtitle {
+         
+            width: 80%;
+            margin: auto;
+        }
+    .subtitle p {
+            font-size: 1rem;
+        }
+    .jumbotron {
+        margin-top: 70px;
+        height: 65vh;
+    
+}
   }
 
   @media only screen and (max-width: 360px) {
