@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+
+import React, { useState, useEffect } from 'react';
 import Header from './components/Header'
 import LocationCard from './components/LocationCard'
 import Footer from './components/Footer'
@@ -9,39 +10,30 @@ import { faMapMarkerAlt, faPhone } from '@fortawesome/free-solid-svg-icons'
 //importing icons
 library.add(fab, faMapMarkerAlt, faPhone)
 
-//airtable
-/*
-const apiKey = process.env.REACT_APP_API_KEY;
-const url = process.env.REACT_APP_API_URL;
-*/
+  //testing variables
+  //console.log(process.env.REACT_APP_API_KEY);
+  //console.log(process.env.REACT_APP_API_URL);
+  const base = process.env.REACT_APP_API_URL + process.env.REACT_APP_API_KEY;
+  
 
-const apiKey='keyEKDet6ta3USuZe'
-const url='https://api.airtable.com/v0/appoWlSjRws1zu8pO/Locations?api_key='
-var base = url+apiKey;
+const App = () => {
 
-class App extends Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      locations: [],
-    };
-  }
-
-  componentDidMount() {
+  const[locations, setLocations] = useState([]); 
+  //const [hasError, setErrors] = useState(false);
+  useEffect(() => {
     fetch(base)
-    .then((resp) => resp.json())
-    .then(data => {
-       this.setState({ locations: data.records });
-    }).catch(err => {
-      // Error :(
-    });
-  }
+      .then((res) => res.json())
+      .then((data) => {
+        setLocations(data.records);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
 
-  render() {
+ 
     return (
-
       <div className="container-fluid px-0">
         <Header />
   
@@ -49,7 +41,7 @@ class App extends Component {
           <div className="row align-items-center">
           
               <div className="card-deck mx-auto">
-                {this.state.locations.map(location => <LocationCard {...location.fields} /> )}
+                {locations.map(location => <LocationCard {...location.fields} /> )}
               </div>
         
           </div>
@@ -62,10 +54,10 @@ class App extends Component {
         <Footer />
 
       </div>
+    )
 
-    
-    );
-  }
-}
+
+}  
+
 
 export default App;
