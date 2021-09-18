@@ -14,7 +14,7 @@ const Footer = () => {
                    <p>Inspirado por <a href="https://oxigeno.cc" target="_blank" rel="noreferrer">Oxígeno México</a></p>
                    <div className="footer-copyright">
                        <p>Icons by <a href="https://www.freepik.com" title="Freepik" rel="noreferrer">Freepik</a> & <a href="https://www.flaticon.com/" title="Flaticon" rel="noreferrer">Flaticon</a></p>
-                       <p>Made with &#128155; by <a href="https://emejia.carrd.co" title="Creator" target="_blank" rel="noreferrer">Edith</a></p>
+                       <p>Made with &#128155; by <a href="https://edithmg.netlify.app" title="Creator" target="_blank" rel="noreferrer">Edith</a></p>
                        <p>Oxígeno MTY - Copyright © 2021.</p>
                    </div>
                </div>

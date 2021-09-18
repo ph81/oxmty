@@ -16,13 +16,7 @@ const LocationCard = (props) => {
                 <h5 className="card-title">{props.empresa}</h5>
                 <p className="phone"> <FontAwesomeIcon icon="phone"/> {props.tel}</p>
                 <p>{props.horario && <small className="text-muted">Horario: {props.horario}</small> }</p>
-               
-                    
-                
-                   
               
-                    
-               
                 <p>
                 {props.recarga && <span aria-label="Recarga">Recarga: {props.recarga}</span>}
                 {props.venta && <span>Venta: {props.venta}</span>}
@@ -30,15 +24,12 @@ const LocationCard = (props) => {
            
                 </p>
                 <p >
-                    <span>{props.whatsapp && <a href={props.whatsapp} alt="Whatsapp" rel="noreferrer"><FontAwesomeIcon icon={['fab', 'whatsapp']} className="wa" /></a>}</span>
-                    <span>{props.dir && <a href={props.dir} alt="Dirección" target="_blank" rel="noreferrer"><FontAwesomeIcon icon="map-marker-alt" className="map" /></a>}</span>
-                    <span>{props.web && <a href={props.web} alt="Web/Facebook" target="_blank" rel="noreferrer">Web/Facebook</a>}</span>
-                   
+                    <span>{props.whatsapp && <a href={props.whatsapp} aria-label="Whatsapp" rel="noreferrer"><FontAwesomeIcon icon={['fab', 'whatsapp']} className="wa" /></a>}</span>
+                    <span>{props.dir && <a href={props.dir} aria-label="Dirección" target="_blank" rel="noreferrer"><FontAwesomeIcon icon="map-marker-alt" className="map" /></a>}</span>
+                    <span>{props.web && <a href={props.web} aria-label="Web/Facebook" target="_blank" rel="noreferrer">Web/Facebook</a>}</span>
                     
                 </p>
-                
-            
-
+         
             </div>                                   
     
         </div>
